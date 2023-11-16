@@ -6,7 +6,6 @@ import requests
 import json
 import csv
 from dotenv import load_dotenv
-from collections import namedtuple
 from datetime import date, datetime
 
 load_dotenv()
@@ -53,7 +52,7 @@ def actualizar(message):
     else:
         bot.reply_to(
             message,
-            "Veo que has mandado un .csv, si quieres que me lo descargue "
+            "Veo que has mandado un .csv, si quieres que me lo descargue para"
             + "actualizar los recordatorios asegúrate de ponerle el comando '/s' como caption",
         )
 

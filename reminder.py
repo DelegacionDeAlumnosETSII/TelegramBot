@@ -37,11 +37,11 @@ def manda_mensaje():
                 texto = users + "\n\n" + mensaje
                 bot.send_message(cid, texto)
             del recordatorios[k]
-
+        '''
         else:
             texto = "No hay ningún recordatorio para hoy. Espero que tengáis un gran día! <3"
             bot.send_message(cid, texto)
-
+        '''
     with open(file_path, "w") as f:
         json.dump(recordatorios, f)
 
